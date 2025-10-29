@@ -1,0 +1,94 @@
+/* h1 {
+    background-color: rgb(236, 233, 100);
+    color: rgb(174, 23, 23);
+    text-align:  center;
+}
+
+#box{
+      background-color: rgb(255, 230, 0);
+      color: rgb(196, 36, 36);
+}
+
+div {
+    text-align:  center;
+    background-color: dimgray;
+    color: rgb(62, 32, 77);
+} */
+
+
+
+/* text overline line through overline wavy underline etcetera things ke liye  */
+#aaa {
+    text-decoration:pink line-through;
+    color: rgb(88, 142, 7);
+}
+
+#bbb {
+    text-decoration: red underline;
+    color: rgb(88, 142, 7);
+}
+#ccc {
+    text-decoration:blue overline;
+    color: rgb(88, 142, 7);
+}
+
+#ddd {
+    text-decoration:blue wavy underline;
+    color: rgb(88, 142, 7);
+}
+
+
+
+/* text Co center Karne Ke Liye */
+div{
+    text-align: center;
+
+}
+
+a {
+        text-decoration: none;
+        
+}
+
+
+/* text background colur and text color change karne Ke leye */
+#lll{
+    background-color: aquamarine;
+    text-align: center;
+    color: rgb(212, 59, 20);
+}
+
+
+
+/* fontco Dark Ya Lighter Banana Ke Liye */
+
+#nnn{
+    font-weight: 900;
+}
+
+.vvv{
+    font-weight: 100;
+}
+
+
+
+/* font style change Karnika Liye */
+#hhh{
+         font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+
+/* Font size, line hight, text transform change in pixel */
+#font{
+    font-size: 30px;
+    line-height: 80px;
+    text-transform:uppercase;
+    /* text-transform: lowercase;
+    text-transform: capitalize; */
+}
+
+
+
+

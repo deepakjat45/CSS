@@ -1,0 +1,29 @@
+/* Background image and background size */
+
+div {
+  width: 200px;
+  height: 200px;
+  border: 2px solid black;
+  display: inline-block;
+}
+
+/* body{
+    background-size: cover;
+    background-image: url(tree-photo.jpg);
+} */
+
+#boxa {
+  background-size: cover;
+  background-image: url(tree-photo.jpg);
+}
+
+#boxb {
+  background-size: contain;
+  background-image: url(tree-photo.jpg);
+  /* background-repeat: no-repeat; */
+}
+
+#boxc {
+  background-size: auto;
+  background-image: url(tree-photo.jpg);
+}

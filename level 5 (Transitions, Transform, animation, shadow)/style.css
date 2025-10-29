@@ -1,0 +1,150 @@
+div {
+  height: 100px;
+  width: 100px;
+  background-color: aqua;
+  border: 2px solid black;
+  margin: 30px;
+}
+
+/* pseudo class */
+#a:hover {
+  background-color: rgb(5, 5, 125);
+}
+/* _____________________________________________________________________________________ */
+
+/* Transitionsin CSS */
+/* Transitions enable you to define the transition between two states of an element. */
+#a {
+  /* transition-property: all; */
+  /* transition-duration: 2s; */
+  /* transition-timing-function: ease-in; */
+  /* transition-timing-function: ease-out; */
+  /* transition-timing-function: linear; */
+  /* transition-timing-function: steps(5); */
+  /* transition-delay: 0.5s; */
+
+  /* Use all transition in one line  */
+  transition: all 1s ease-in-out 0.2s;
+}
+
+/* css transform */
+/* Used to apply 2D & 3D transformations to an element */
+
+/* to rotate */
+#b {
+  margin: 50px;
+  /* transform: rotate(45deg); */
+  transition: all 1s ease-in-out;
+  /* Rotate along axis  */
+  /* rotate: x 45deg; */
+  /* rotate: y 45deg; */
+  /* rotate: z 45deg; */
+}
+#b:hover {
+  /* rotate: x 45deg;
+    rotate: y 45deg;
+    rotate: z 45deg; */
+  transform: rotateX(45deg) rotateY(30deg) rotateZ(75deg);
+}
+
+/* to scale  
+khud ke mukabale kitana bada ya choto hoga */
+#c {
+  transition: all 1s ease-in-out;
+  margin: 100px;
+  /* transform: scale(2) */
+
+  /* x and y axis ke along  */
+  /* transform: scale(2, 1) */
+}
+
+#c:hover {
+  transform: scale(2, 5);
+  /* transform: rotate(360deg); */
+}
+
+/* translate */
+/* element ko apne center se age piche ya upr niche karne ke liye  */
+#d {
+  transition: all 1s ease-in-out;
+}
+#d:hover {
+  margin: 10px;
+  /* transform: translate(20px); */
+  transform: translate(20px, 50px);
+}
+
+/* skew */
+/* dono corner ko pakad kar khichane ka animation */
+
+#e {
+  position: absolute;
+  top: 800px;
+  left: 100px;
+  transition: all 2s ease-in-out;
+}
+
+#e:hover {
+  transform: skew(70deg);
+}
+
+
+
+/* ________________________________________________________________________________________ */
+
+
+
+
+
+
+/* Animation */ 
+
+#f {
+  padding: 20px;
+  border-radius: 50%;
+  position: absolute;
+  top: 1050px;
+  left: 100px;
+
+  /* animation-name: myfirstanimation;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-delay: 0.25s;
+    animation-iteration-count: infinite; */
+
+  /* animation-direction: normal; */
+  /* animation-direction: reverse;
+    animation-direction: alternate;
+    animation-direction: alternate-reverse; */
+  /* animation-direction: alternate, reverse, normal; */
+
+  /* animation short hand */
+  animation: myfirstanimation 3s linear 0.25s infinite alternate;
+}
+
+@keyframes myfirstanimation {
+  0% {
+    left: 0px;
+    background-color: rgb(40, 40, 250);
+  }
+
+  50% {
+    background-color: rgb(255, 45, 248);
+  }
+
+  100% {
+    left: 300px;
+    background-color: rgb(255, 19, 19);
+  }
+}
+
+/* shadow creation ke liye box shadow ka use karte hain */
+
+#box {
+  box-shadow: 2px 2px 5px black;
+  transition: 0.3s;
+}
+#box:hover {
+  box-shadow: 5px 5px 10px black;
+  transform: scale(1.01);
+}

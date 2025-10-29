@@ -1,0 +1,186 @@
+body {
+  text-align: center;
+}
+
+.class {
+  border: 2px solid black;
+  height: 100;
+  width: 200px;
+}
+
+#container {
+  height: 300px;
+  width: 700px;
+  background-color: rgb(156, 164, 161);
+  display: flex;
+  padding: 10px;
+  margin: 50px;
+}
+
+#box6 {
+  font-size: 22px;
+  height: 100px;
+}
+
+#box5 {
+  font-size: 10px;
+  height: 30px;
+}
+
+/* flex direction    
+container me main axis ki direction badlane ke liye use kiya jata he  */
+
+#container {
+  flex-direction: row;
+  /* flex-direction: row-reverse;   */
+  /* flex-direction: column;  */
+  /* flex-direction: column-reverse; */
+}
+
+/* --------------------------------------------------------------- */
+
+/* flex properties  */
+
+/* justify content */
+/* Container may box Kaha se start honge main axis ke along, unke Beachmen distance set karne ke liye use hota he 
+(ye main axis ke along box set karta he)  */
+#container {
+  justify-content: flex-start;
+  /* justify-content: flex-end; */
+  /* justify-content: center; */
+  /* justify-content: space-around; */
+  /* justify-content: space-between; */
+  /* justify-content: space-evenly; */
+}
+
+/* aling itmes */
+/* juat like justify contant but ye Cross axis ke along itmes ko set karata he  */
+#container {
+  /* align-items: stretch; */
+  align-items: flex-start;
+  /* align-items: flex-end; */
+  /* align-items: center; */
+  /* align-items: baseline; */
+}
+
+/* flex-wrap */
+/* esame box container me ek sidhi line me jakar bahar nahi nikalte balki wrap hokar (palat kar) dusari line start kar dete he  */
+#container {
+  flex-wrap: nowrap;
+  /* flex-wrap: wrap; */
+  /* flex-wrap: wrap-reverse; */
+}
+
+/* align-content  */
+
+#container {
+  /* align-content: center; */
+  align-content: flex-start;
+  /* align-content: flex-end; */
+  /* align-content: space-between; */
+}
+/* ____________________________________________________________________ */
+
+/* flex properties for flex items */
+#box5 {
+  align-self: flex-end;
+  /* akele box ko aage piche karne ke liye */
+}
+
+#box1 {
+  height: 200px;
+  /* flex-grow: 2; */
+  flex-shrink: 0.5;
+}
+
+/* ---------------------------------------------------------------------------------------- */
+
+/* Grid */
+/* jub row or column dono ko use karna hoga tab gird use karte he */
+
+#container2 {
+  height: 300px;
+  width: 600px;
+  background-color: rgb(251, 251, 177);
+  border: 2px solid black;
+  display: grid;
+
+  /* grid-template-rows: 50px 50px 50px 50px 50px; */
+  /* grid-template-columns: 100px 100px 100px; */
+  /* grid-template-columns: auto auto auto auto auto; */
+  /* grid-template-rows: auto auto auto auto auto; */
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+
+  /* row-gap: 10px; */
+  /* column-gap: 10px; */
+  gap: 5px 5px; /* short hand for row-gap and column-gap */
+
+  /* justify-items: center;    grid items ko horizontaly center me set karne ke liye */
+  /* align-items: center;    grid items ko vertically center me set karne ke liye */
+  place-items: center; /* short hand */
+}
+
+.item {
+  height: 50px;
+  width: 50px;
+  background-color: rgb(255, 47, 0);
+  border: 1px solid black;
+}
+
+#item1 {
+  /* grid-column-start: 1; */  /* item column me kitana lamba jayega */
+  /* grid-column-end: 3; */  
+  grid-column: 1 / 3; /* short hand */
+
+  /* grid-row-start: 1;   // item row me kitana lamba jayega 
+  grid-row-end: 3; */
+  grid-row: 1 / 3; /* short hand */
+
+  /* justify-self: end;    akele item ko horizontaly set karne ke liye */
+  /* align-self: end;    akele item ko vertically set karne ke liye */
+  place-self: end; /* short hand */
+}
+
+/* -------------------------------------------------------------------------- */
+
+/* Media Queries */
+
+#boxa {
+  height: 200px;
+  width: 200px;
+  background-color: blue;
+  margin-top: 200px;
+}
+
+@media (min-width: 600px) {
+  #boxa {
+    background-color: rgb(30, 120, 255);
+  }
+}
+
+@media (max-width: 300px) {
+  #boxa {
+    background-color: rgb(50, 255, 74);
+  }
+}
+
+@media (min-width: 300px) and (max-width: 400px) {
+  #boxa {
+    background-color: rgb(255, 45, 203);
+  }
+}
+
+@media (min-width: 400px) and (max-width: 600px) {
+  #boxa {
+    background-color: rgb(255, 38, 38);
+  }
+}
+
+@media (orientation: landscape) {
+  #boxa {
+    background-color: green;
+    color: white;
+    font-size: 30px;
+  }
+}

@@ -1,0 +1,98 @@
+/* Relative unit in css */
+
+/*     % as Relative unit in css  */
+/* size as relative to an element's parent object. */
+
+#box1 {
+  height: 100px;
+  width: 150px;
+  background-color: chartreuse;
+  border: 2px solid black;
+}
+
+#box2 {
+  height: 42%;
+  width: 60%;
+  background-color: rgb(238, 14, 14);
+  border: 2px solid black;
+}
+
+/* esame em and rem (root rm) ko video and pdf me explain keyo he   */
+
+/* esame vh and wh bhi aata he pdf me samjaya he  ↓ */
+
+#box3 {
+  background-color: cadetblue;
+  border: 3px solid black;
+  height: 20vh;
+  width: 30vw;
+  padding: 25px;
+  margin: 25px;
+}
+
+/* ______________________________________________________________________________________________________ */
+
+/* Position property */
+
+div {
+  width: 100px;
+  height: 100px;
+  border: 2px solid black;
+  display: inline-block;
+}
+
+/* static */
+
+#boxa {
+  background-color: red;
+  position: static;
+}
+
+/* relative  */
+
+#boxb {
+  position: relative;
+  top: 50px;
+  left: 20px;
+  background-color: rgb(236, 229, 21);
+}
+
+/* absolute */
+
+#boxc {
+  background-color: rgb(62, 112, 212);
+  position: absolute;
+  top: 900px;
+  left: 200px;
+}
+
+/* fixed */
+
+#boxd {
+  background-color: rgb(241, 71, 241);
+  position: fixed;
+  top: 0;
+  right: 20px;
+}
+
+/* sticky */
+
+#boxe {
+  background-color: rgb(64, 237, 41);
+  position: sticky;
+  top: 0;
+  left: 800px;
+}
+
+/* ________________________________________________________________________________________________ */
+
+/* Z-index    (box ko ek dusare ke upr niche karane ke liye) */
+
+#boxb {
+  /* z-index: 0;       default */
+  z-index: 2;
+}
+
+#boxc {
+  z-index: 1;
+}

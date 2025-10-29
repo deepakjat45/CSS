@@ -1,0 +1,142 @@
+/* Box model in css */
+
+h1 {
+  height: 70px;
+  width: 400px;
+  background-color: rgb(243, 225, 27);
+  text-align: center;
+  border: 10px;
+  border-style: solid;
+}
+/* kisi bhi element height or width set karne ke liye */
+#mmm {
+  height: 200px;
+  width: 200px;
+  background-color: rgb(57, 138, 205);
+}
+
+/* Element Ka Boarder set Karne Ke Liye */
+#mmm {
+  border: 5px;
+  border-color: green;
+  border-style: solid;
+}
+
+/* Border Ki tino Property Ek Saath Likhne Ke leye */
+p {
+  border: 2px solid greenyellow;
+}
+
+/* kesi bhi element ke box ke cornar ko corve karne ke liye */
+#mmm {
+  border-radius: 20px;
+}
+
+/* 
+ circle create Karne Ke liye */
+
+#iii {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  text-align: center;
+  background-color: blueviolet;
+}
+
+/* padding set karne ke liye  */
+#lll {
+  height: 200px;
+  width: 200px;
+  background-color: aquamarine;
+
+  padding-top: 25px;
+  padding-left: 25px;
+  padding-bottom: 25px;
+  padding-right: 25px;
+}
+
+/* padding ki saree value ek saath set Karne Ke Liye */
+#jjj {
+  height: 200px;
+  width: 200px;
+  background-color: aquamarine;
+
+  /* padding: 25px; */
+
+  padding: 1px 2px 3px 4px;
+}
+
+#lop {
+  border: 3px solid blue;
+  padding: 25px;
+  margin: 50px;
+  background-color: rgb(145, 203, 254);
+  color: rgb(92, 3, 148);
+}
+
+/*______________________________________________________________________________________________________ */
+
+/* element ko inline or block or inline-block banane ke liye */
+
+#rrr {
+  background-color: yellow;
+  border: 2px solid black;
+  padding: 5px;
+  margin: 25px;
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+}
+
+#qqq {
+  background-color: rgb(50, 232, 33);
+  border: 2px solid black;
+  padding: 5px;
+  margin: 25px;
+  display: inline;
+  width: 200px;
+  height: 200px;
+}
+
+/* Display none me element bhi Gayab Ho Jata Hai or Uske Lie Koi Jaga Bhi reserved Nahi Bachati Jab Ki (Visibility hidden) me element gayab hota he lekin uske liye jagahe reserved raheti he    */
+
+#klm {
+  background-color: rgb(237, 29, 29);
+  border: 2px solid black;
+  padding: 5px;
+  margin: 25px;
+  visibility: hidden;
+  width: 200px;
+  height: 200px;
+}
+
+#kmm {
+  background-color: rgb(70, 27, 172);
+  border: 2px solid black;
+  padding: 5px;
+  margin: 25px;
+  display: none;
+  width: 200px;
+  height: 200px;
+}
+
+/* color ki opacity 0 to 1 set karne ke liye  */
+
+#plp {
+  background-color: rgba(218, 51, 51, 0.7);
+  border: 2px solid black;
+  padding: 5px;
+  margin: 25px;
+  width: 200px;
+  height: 200px;
+  opacity: 0.3;
+}
+
+#hjkl {
+  background-color: cornflowerblue;
+  border: 0.1cm solid black;
+  height: 6cm;
+  width: 10cm;
+  margin: 5cm;
+  padding: 2cm;
+}
