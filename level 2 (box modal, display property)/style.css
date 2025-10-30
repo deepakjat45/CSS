@@ -8,6 +8,7 @@ h1 {
   border: 10px;
   border-style: solid;
 }
+
 /* kisi bhi element height or width set karne ke liye */
 #mmm {
   height: 200px;
@@ -32,9 +33,7 @@ p {
   border-radius: 20px;
 }
 
-/* 
- circle create Karne Ke liye */
-
+/* circle create Karne Ke liye */
 #iii {
   height: 200px;
   width: 200px;
