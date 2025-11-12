@@ -7,6 +7,7 @@
     background-color: #f0f0f0;
 }
 
+
 .scene {
     width: 200px;
     height: 200px;
@@ -37,6 +38,7 @@
     align-items: center;
 }
 
+
 .front  { transform: rotateY(  0deg) translateZ(100px); }
 .back   { transform: rotateY(180deg) translateZ(100px); }
 .left   { transform: rotateY(-90deg) translateZ(100px); }
@@ -52,6 +54,7 @@
         transform: rotateX(360deg) rotateY(360deg);
     }
 } */
+
 
 
 body {
@@ -70,6 +73,7 @@ body {
     animation: moveBox 4s infinite;
 }
 
+
 @keyframes moveBox {
     0% {
         transform: translate(0, 0);
@@ -87,3 +91,4 @@ body {
         transform: translate(0, 0);
     }
 }
+
